@@ -17,8 +17,20 @@ export class SignupPage {
     firebase
       .auth()
       .createUserWithEmailAndPassword(this.email, this.password)
-      .then((user) => {
+      .then((user: firebase.User) => {
         console.log(user);
+
+        user
+          .updateProfile({
+            displayName: this.name,
+            photoURL: "",
+          })
+          .then(() => {
+            console.log("Updated");
+          })
+          .catch((err) => {
+            console.log(err);
+          });
       })
       .catch((err) => {
         console.log(err);

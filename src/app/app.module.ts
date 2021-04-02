@@ -8,19 +8,18 @@ import { MyApp } from "./app.component";
 import { LoginPage } from "../pages/login/login";
 import { SignupPage } from "../pages/signup/signup";
 
-// import firebase from "firebase";
+import firebase from "firebase";
 
-// var firebaseConfig = {
-//   apiKey: "AIzaSyAvU1om-KW2QpA13WwLIYjplSkpY5iACOI",
-//   authDomain: "feedlyapp-9a2ee.firebaseapp.com",
-//   projectId: "feedlyapp-9a2ee",
-//   storageBucket: "feedlyapp-9a2ee.appspot.com",
-//   messagingSenderId: "916866036591",
-//   appId: "1:916866036591:web:8c6389bdc81ec055a3ee9a",
-//   measurementId: "G-99B90328KM",
-// };
-// firebase.initializeApp(firebaseConfig);
-// firebase.analytics();
+var firebaseConfig = {
+  apiKey: "AIzaSyAvU1om-KW2QpA13WwLIYjplSkpY5iACOI",
+  authDomain: "feedlyapp-9a2ee.firebaseapp.com",
+  projectId: "feedlyapp-9a2ee",
+  storageBucket: "feedlyapp-9a2ee.appspot.com",
+  messagingSenderId: "916866036591",
+  appId: "1:916866036591:web:8c6389bdc81ec055a3ee9a",
+  measurementId: "G-99B90328KM",
+};
+firebase.initializeApp(firebaseConfig);
 
 @NgModule({
   declarations: [MyApp, LoginPage, SignupPage],
