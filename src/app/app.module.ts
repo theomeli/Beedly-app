@@ -7,6 +7,7 @@ import { StatusBar } from "@ionic-native/status-bar";
 import { MyApp } from "./app.component";
 import { LoginPage } from "../pages/login/login";
 import { SignupPage } from "../pages/signup/signup";
+import { FeedPage } from "../pages/feed/feed";
 
 import firebase from "firebase";
 
@@ -22,10 +23,10 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 @NgModule({
-  declarations: [MyApp, LoginPage, SignupPage],
+  declarations: [MyApp, LoginPage, SignupPage, FeedPage],
   imports: [BrowserModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
-  entryComponents: [MyApp, LoginPage, SignupPage],
+  entryComponents: [MyApp, LoginPage, SignupPage, FeedPage],
   providers: [
     StatusBar,
     SplashScreen,
