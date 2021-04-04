@@ -3,8 +3,6 @@ import { ErrorHandler, NgModule } from "@angular/core";
 import { IonicApp, IonicErrorHandler, IonicModule } from "ionic-angular";
 import { SplashScreen } from "@ionic-native/splash-screen";
 import { StatusBar } from "@ionic-native/status-bar";
-// import { AngularFirestore } from 'angularfire2/firestore';
-// import * as admin from "firebase-admin";
 
 import { MyApp } from "./app.component";
 import { LoginPage } from "../pages/login/login";
@@ -23,12 +21,6 @@ var firebaseConfig = {
   measurementId: "G-99B90328KM",
 };
 firebase.initializeApp(firebaseConfig);
-// firebase.firestore().settings({
-//   timestampsInSnapshots: true,
-// });
-// const adminApp = admin.initializeApp();
-// const firestore = admin.firestore(adminApp);
-// firestore.settings({ timestampsInSnapshots: true });
 
 @NgModule({
   declarations: [MyApp, LoginPage, SignupPage, FeedPage],
